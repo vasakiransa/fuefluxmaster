@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete Account - FuelFlux</title>
+    <title>Delete Account or Data - FuelFlux</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             padding: 0;
         }
         .container {
-            max-width: 600px;
+            max-width: 800px;
             margin: 50px auto;
             padding: 20px;
             background-color: white;
@@ -24,64 +24,74 @@
             color: #333;
         }
         p {
-            text-align: center;
-            color: #555;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        input[type="text"], input[type="email"] {
-            width: 100%;
-            padding: 10px;
             font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            color: #555;
+            line-height: 1.6;
         }
-        button {
-            padding: 10px;
-            font-size: 18px;
-            background-color: #e74c3c;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
         }
-        button:hover {
-            background-color: #c0392b;
-        }
-        .success-message {
-            text-align: center;
-            font-size: 18px;
+        a {
             color: #28a745;
-            margin-top: 20px;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Delete Your Account</h1>
-        <p>If you wish to delete your FuelFlux account, please provide your details and confirm the deletion.</p>
+        <h1>Manage Your FuelFlux Account or Data</h1>
+        <p>Welcome to the official FuelFlux account and data management page. We value your privacy and give you the option to either delete your entire account or remove specific data while keeping your account active. Below are the steps for both options:</p>
         
-        <form id="deleteAccountForm" onsubmit="return handleFormSubmit(event)">
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <button type="submit">Delete Account</button>
-        </form>
-        
-        <p id="message" class="success-message" style="display: none;">Your account has been successfully deleted.</p>
-    </div>
+        <h2>Option 1: Delete Your Entire Account</h2>
+        <p>If you wish to delete your entire FuelFlux account, follow the steps below:</p>
+        <ul>
+            <li>Send an email to <a href="mailto:support@fuelflux.in">support@fuelflux.in</a> with the subject line <strong>"Delete My FuelFlux Account"</strong>.</li>
+            <li>In the email, provide the following information:
+                <ul>
+                    <li>Your full name</li>
+                    <li>Your registered email address</li>
+                    <li>Any additional details that can help us identify your account</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Once we receive your request, we will:</p>
+        <ul>
+            <li>Permanently delete all of your personal data (including your name, phone number, vehicle number, and email address) within <strong>24 hours</strong> of your request.</li>
+            <li>No data will be retained, and nothing will be shared with any third parties.</li>
+        </ul>
 
-    <script>
-        function handleFormSubmit(event) {
-            event.preventDefault();
-            // Simulating account deletion
-            document.getElementById("deleteAccountForm").style.display = "none";
-            document.getElementById("message").style.display = "block";
-        }
-    </script>
+        <h2>Option 2: Delete Specific Data (Keep Account)</h2>
+        <p>If you'd prefer to keep your account but delete specific data (e.g., phone number, vehicle details), follow these steps:</p>
+        <ul>
+            <li>Send an email to <a href="mailto:support@fuelflux.in">support@fuelflux.in</a> with the subject line <strong>"Delete Specific Data in My FuelFlux Account"</strong>.</li>
+            <li>In the email, specify the data you wish to delete, such as:
+                <ul>
+                    <li>Phone Number</li>
+                    <li>Vehicle Number</li>
+                    <li>Email Address</li>
+                </ul>
+            </li>
+        </ul>
+        <p>We will remove the specified data within <strong>24 hours</strong> while ensuring that your account remains active. You can continue using FuelFlux with the remaining data.</p>
+
+        <h2>Data Retention Policy</h2>
+        <p>We ensure that:
+            <ul>
+                <li>Your data is deleted within 24 hours of your request, whether you choose to delete your entire account or just specific data.</li>
+                <li>No data will be retained beyond what is necessary for the operation of your account or as required by law.</li>
+            </ul>
+        </p>
+
+        <h2>FuelFlux on Google Play</h2>
+        <p>Our Play Store username is <strong>FuelFlux</strong>. You can find our app by searching for FuelFlux on the Google Play Store.</p>
+
+        <p>If you have any questions or concerns regarding account deletion or data handling, feel free to reach out to us at <a href="mailto:support@fuelflux.in">support@fuelflux.in</a>.</p>
+    </div>
 
 </body>
 </html>
